@@ -19,7 +19,7 @@ def input_students
   
   def print(students)
     students.each_with_index do |student, index|
-      puts "#{index + 1}. #{student[:name]} (#{student[:cohort]} cohort)"
+      puts "#{index + 1}. #{student[:name]} (#{student[:cohort]} cohort)" if student[:name][0] == "C"
     end 
   end 
   
