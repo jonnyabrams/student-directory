@@ -35,7 +35,6 @@ end
 def input_students
   puts "Please enter the names of the students"
   puts "To finish, just hit return twice"
-  @students = []
   name = STDIN.gets.chomp
 
   while !name.empty? do
@@ -43,7 +42,6 @@ def input_students
     puts "Now we have #{@students.count} students"
     name = STDIN.gets.chomp
   end
-  @students
 end
 
 def show_students
